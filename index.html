@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Vida Full Hand Car Wash &amp; Detail — Las Vegas, NV</title>
+  <meta name="description" content="Vida Full Hand Car Wash &amp; Detail in Las Vegas. 100% hand wash — from a $10 hand wash to the Ultimate VIP detail. Open daily 8:00 AM–6:30 PM. 5853 W Tropicana Ave. Call (725) 265-0291." />
+  <meta name="theme-color" content="#0b0b0d" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vida Full Hand Car Wash &amp; Detail" />
+  <meta property="og:description" content="100% hand wash &amp; detail in Las Vegas — from $10. Open daily 8 AM–6:30 PM." />
+  <meta property="og:image" content="images/vidacarwash/1.png" />
+  <meta property="og:url" content="https://vidacarwash.com/" />
+  <meta property="og:site_name" content="Vida Full Hand Car Wash &amp; Detail" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Local business structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "Vida Full Hand Car Wash & Detail",
+    "image": "images/vidacarwash/1.png",
+    "telephone": "+17252650291",
+    "url": "https://vidacarwash.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5853 W Tropicana Ave",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "postalCode": "89103",
+      "addressCountry": "US"
+    },
+    "priceRange": "$10–$60",
+    "openingHours": "Mo-Su 08:00-18:30"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Archivo+Narrow:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---------- Tokens ---------- */
+    :root {
+      --bg: #0b0b0d;
+      --bg-2: #131316;
+      --surface: #17171b;
+      --surface-2: #1e1e23;
+      --line: #2a2a30;
+      --line-strong: #3a3a42;
+      --text: #f4f3f0;
+      --muted: #9c9ca3;
+      --dim: #6b6b72;
+      --accent: oklch(0.64 0.21 26);     /* warm crimson */
+      --accent-hi: oklch(0.72 0.20 30);
+      --accent-dim: oklch(0.30 0.10 26);
+      --gold: oklch(0.84 0.16 88);
+
+      --r-sm: 6px;
+      --r-md: 10px;
+      --r-lg: 18px;
+      --r-xl: 28px;
+
+      --maxw: 1240px;
+      --pad: clamp(20px, 4vw, 56px);
+
+      --display: "Archivo", system-ui, sans-serif;
+      --narrow:  "Archivo Narrow", "Archivo", sans-serif;
+      --body:    "Manrope", system-ui, sans-serif;
+    }
+
+    /* ---------- Reset ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+      font-size: 17px;
+      line-height: 1.55;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: 0; background: 0; color: inherit; }
+    h1, h2, h3, h4 { margin: 0; font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; text-wrap: balance; }
+    p { margin: 0; text-wrap: pretty; }
+    :focus-visible { outline: 2px solid var(--accent-hi); outline-offset: 3px; border-radius: 4px; }
+
+    .wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad); }
+
+    /* Eyebrow label */
+    .eyebrow {
+      font-family: var(--narrow);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px; height: 1px; background: var(--accent);
+      display: inline-block;
+    }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 22px;
+      border-radius: 999px;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform .15s ease, background .2s ease, border-color .2s ease, color .2s ease;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hi); }
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--line-strong);
+      color: var(--text);
+    }
+    .btn-ghost:hover { border-color: var(--text); background: rgba(255,255,255,0.04); }
+    .btn .arrow { transition: transform .2s ease; }
+    .btn:hover .arrow { transform: translateX(3px); }
+
+    /* ---------- Header ---------- */
+    header.site {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 50;
+      backdrop-filter: blur(14px) saturate(150%);
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      background: rgba(11,11,13,0.55);
+      border-bottom: 1px solid transparent;
+      transition: background .25s ease, border-color .25s ease;
+    }
+    header.site.scrolled {
+      background: rgba(11,11,13,0.85);
+      border-bottom-color: var(--line);
+    }
+    header.site .wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      font-family: var(--display); font-weight: 900;
+      letter-spacing: 0.02em;
+      font-size: 18px;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 38%;
+      display: block;
+      flex: 0 0 auto;
+      background: #0e2a4a;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12), 0 8px 24px -10px rgba(0,0,0,0.6);
+    }
+    .brand-text small {
+      display: block;
+      font-family: var(--narrow);
+      font-weight: 600;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    nav.primary {
+      display: flex; gap: 28px;
+      font-family: var(--narrow);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 12px;
+    }
+    nav.primary a { color: var(--muted); transition: color .15s ease; }
+    nav.primary a:hover { color: var(--text); }
+    .header-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--narrow);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      transition: background .2s ease;
+    }
+    .header-cta:hover { background: var(--accent-hi); }
+    @media (max-width: 820px) {
+      nav.primary { display: none; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      padding-top: 72px;
+      display: flex; align-items: flex-end;
+      color: #fff;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url("images/vidacarwash/1.png") center 35% / cover no-repeat;
+      transform: scale(1.04);
+      z-index: -2;
+    }
+    .hero-bg::after {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(11,11,13,0.5) 0%, rgba(11,11,13,0.2) 30%, rgba(11,11,13,0.85) 75%, var(--bg) 100%),
+        linear-gradient(110deg, rgba(11,11,13,0.7) 0%, rgba(11,11,13,0) 55%);
+    }
+    .hero-inner {
+      width: 100%;
+      padding-block: clamp(60px, 10vw, 110px);
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: clamp(28px, 4vw, 64px);
+      align-items: end;
+    }
+    @media (max-width: 880px) {
+      .hero-inner { grid-template-columns: 1fr; }
+    }
+    .hero h1 {
+      font-size: clamp(54px, 10vw, 132px);
+      line-height: 0.92;
+      letter-spacing: -0.035em;
+      font-weight: 900;
+      margin-block: 18px 22px;
+    }
+    .hero h1 .amp {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 800;
+    }
+    .hero h1 .line { display: block; }
+    .hero-tag {
+      font-size: clamp(17px, 1.4vw, 20px);
+      color: rgba(244,243,240,0.88);
+      max-width: 46ch;
+      margin-bottom: 32px;
+    }
+    .hero-cta-row {
+      display: flex; flex-wrap: wrap; gap: 12px;
+    }
+    .hero-meta {
+      display: flex; flex-direction: column; gap: 18px;
+      padding-bottom: 8px;
+    }
+    .hero-meta .stat {
+      border-top: 1px solid rgba(255,255,255,0.18);
+      padding-top: 14px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px 18px;
+    }
+    .hero-meta .stat .k {
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 11px;
+      color: rgba(255,255,255,0.65);
+      grid-column: 1 / -1;
+    }
+    .hero-meta .stat .v {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(22px, 2.4vw, 30px);
+      letter-spacing: -0.01em;
+    }
+    .stars {
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      font-size: 14px;
+    }
+    .scroll-hint {
+      position: absolute;
+      bottom: 24px; left: 50%; transform: translateX(-50%);
+      font-family: var(--narrow);
+      font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      pointer-events: none;
+    }
+    .scroll-hint .line { width: 1px; height: 36px; background: rgba(255,255,255,0.4); animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scaleY(0.4); opacity: 0.3; transform-origin: top; } 50% { transform: scaleY(1); opacity: 1; transform-origin: top; } }
+    @media (max-width: 880px) { .scroll-hint { display: none; } }
+
+    /* ---------- Section base ---------- */
+    section { padding-block: clamp(80px, 10vw, 140px); position: relative; }
+    .section-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(20px, 5vw, 80px);
+      align-items: end;
+      margin-bottom: clamp(48px, 6vw, 72px);
+    }
+    .section-head h2 {
+      font-size: clamp(38px, 5.4vw, 76px);
+      letter-spacing: -0.03em;
+    }
+    .section-head h2 em {
+      font-style: italic;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .section-head .desc {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 48ch;
+    }
+    @media (max-width: 760px) {
+      .section-head { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- Services / Pricing ---------- */
+    #services { background: var(--bg); }
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 1100px) { .pricing { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 720px)  { .pricing { grid-template-columns: 1fr; } }
+    .plan {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: 30px 22px 24px;
+      display: flex; flex-direction: column;
+      transition: border-color .2s ease, transform .25s ease, background .25s ease;
+    }
+    .plan:hover { border-color: var(--line-strong); transform: translateY(-2px); }
+    .plan.featured {
+      background: linear-gradient(180deg, #1d1d22 0%, #131316 100%);
+      border-color: var(--accent-dim);
+    }
+    .plan.featured::before {
+      content: "Most Popular";
+      position: absolute;
+      top: -12px; left: 28px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--narrow);
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+    .plan-name {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .plan.featured .plan-name { color: var(--accent); }
+    .plan-price {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .plan-price .currency { font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--muted); }
+    .plan-price .amount {
+      font-family: var(--display);
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .plan-price .from { font-family: var(--narrow); text-transform: uppercase; letter-spacing: 0.16em; font-size: 11px; color: var(--dim); margin-left: 6px; }
+    .plan-sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0; margin: 0 0 22px;
+      display: flex; flex-direction: column;
+      gap: 9px;
+      border-top: 1px dashed var(--line);
+      padding-top: 20px;
+    }
+    .plan li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px;
+    }
+    .plan li::before {
+      content: "";
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+    .plan-foot {
+      margin-top: auto;
+      display: grid;
+      gap: 4px;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 12px;
+      color: var(--muted);
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .plan-foot b { color: var(--text); font-weight: 700; }
+
+    /* Add-ons + discount strip */
+    .addons {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 880px) { .addons { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 460px) { .addons { grid-template-columns: 1fr; } }
+    .addon {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: 16px 18px;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .addon svg { color: var(--accent); flex: 0 0 auto; }
+    .perks {
+      margin-top: 28px;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+      justify-content: space-between;
+    }
+    .perks .pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .perk {
+      display: inline-flex; align-items: center; gap: 9px;
+      border: 1px solid var(--accent-dim);
+      background: linear-gradient(180deg, rgba(212,80,60,0.10), rgba(212,80,60,0.02));
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 16px;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .perk svg { color: var(--accent); }
+    .price-note {
+      margin: 0;
+      font-family: var(--narrow);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--dim);
+    }
+    .addons-head {
+      margin: 48px 0 18px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .addons-head h3 {
+      font-family: var(--display); font-weight: 800; font-size: 13px;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted);
+      white-space: nowrap;
+    }
+    .addons-head .rule { flex: 1; height: 1px; background: var(--line); }
+
+    /* ---------- Gallery ---------- */
+    #gallery { background: var(--bg-2); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 180px;
+      gap: 12px;
+    }
+    .gallery-grid figure {
+      margin: 0;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      position: relative;
+      background: #222;
+    }
+    .gallery-grid figure img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .4s ease;
+      filter: saturate(1.05) contrast(1.02);
+    }
+    .gallery-grid figure:hover img { transform: scale(1.04); }
+    .gallery-grid figure figcaption {
+      position: absolute;
+      left: 14px; bottom: 14px;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 11px;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(6px);
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+    .g-1 { grid-column: span 7; grid-row: span 2; }
+    .g-2 { grid-column: span 5; grid-row: span 2; }
+    .g-3 { grid-column: span 5; grid-row: span 2; }
+    .g-4 { grid-column: span 7; grid-row: span 2; }
+    @media (max-width: 760px) {
+      .gallery-grid { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-inline: calc(-1 * var(--pad)); padding-inline: var(--pad); }
+      .gallery-grid figure { flex: 0 0 82%; height: 380px; scroll-snap-align: start; }
+      .gallery-grid figure[class*="g-"] { grid-column: auto; grid-row: auto; }
+    }
+
+    /* ---------- Reviews ---------- */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    @media (max-width: 760px) { .reviews-grid { grid-template-columns: 1fr; } }
+    .review {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: 28px;
+      display: flex; flex-direction: column; gap: 16px;
+      transition: border-color .2s ease;
+    }
+    .review:hover { border-color: var(--line-strong); }
+    .review-head {
+      display: flex; align-items: center; gap: 14px;
+    }
+    .avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--surface-2);
+      display: grid; place-items: center;
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--text);
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+    }
+    .review-meta .name {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .review-meta .sub {
+      font-family: var(--narrow);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--dim);
+    }
+    .review .stars { font-size: 16px; }
+    .review p {
+      color: rgba(244,243,240,0.86);
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+    .review .tag {
+      align-self: flex-start;
+      font-family: var(--narrow);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--accent);
+      padding: 5px 10px;
+      border: 1px solid var(--accent-dim);
+      border-radius: 999px;
+    }
+
+    /* ---------- Contact ---------- */
+    #contact { background: var(--bg); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: clamp(28px, 5vw, 64px);
+      align-items: start;
+    }
+    @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-info {
+      display: grid;
+      gap: 4px;
+    }
+    .contact-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 24px;
+      align-items: baseline;
+      padding-block: 22px;
+      border-top: 1px solid var(--line);
+    }
+    .contact-row:last-of-type { border-bottom: 1px solid var(--line); }
+    .contact-row .k {
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .contact-row .v {
+      font-family: var(--display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .contact-row .v a:hover { color: var(--accent); }
+    .contact-row .v small {
+      display: block;
+      font-family: var(--body);
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    @media (max-width: 600px) {
+      .contact-row { grid-template-columns: 1fr; gap: 6px; }
+      .contact-row .v { font-size: 20px; }
+    }
+
+    .contact-card {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 32px 28px;
+      display: flex; flex-direction: column; gap: 22px;
+    }
+    .contact-card .label {
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 11px;
+      color: var(--accent);
+    }
+    .contact-card h3 {
+      font-size: 28px;
+      line-height: 1.1;
+    }
+    .contact-actions {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-top: 4px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer.site {
+      border-top: 1px solid var(--line);
+      padding: 56px 0 32px;
+      background: var(--bg);
+    }
+    footer .row {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 24px; flex-wrap: wrap;
+    }
+    footer .col {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    footer h4 {
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    footer a:hover { color: var(--accent); }
+    footer .copyright {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      font-family: var(--narrow);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 11px;
+      color: var(--dim);
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+      .scroll-hint .line { animation: none; }
+    }
+
+    /* Sticky bottom call button on mobile */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      left: 16px; right: 16px; bottom: 16px;
+      z-index: 60;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--narrow);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 16px;
+      border-radius: 999px;
+      box-shadow: 0 14px 40px -10px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.06);
+    }
+    @media (max-width: 640px) { .mobile-cta { display: block; } body { padding-bottom: 80px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site" id="siteHeader">
+    <div class="wrap">
+      <a href="#top" class="brand" aria-label="Vida Full Hand Car Wash and Detail home">
+        <img class="brand-mark" src="images/vidacarwash/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          Vida Detail
+          <small>Full Hand Car Wash</small>
+        </span>
+      </a>
+      <nav class="primary" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#gallery">Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Visit</a>
+      </nav>
+      <a href="tel:+17252650291" class="header-cta" aria-label="Call Vida Detail at 7 2 5, 2 6 5, 0 2 9 1">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (725) 265-0291
+      </a>
+    </div>
+  </header>
+
+  <a href="tel:+17252650291" class="mobile-cta">Call (725) 265-0291</a>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero-bg" role="img" aria-label="Vida detail crew hand-washing a Mercedes Sprinter van"></div>
+      <div class="wrap hero-inner">
+        <div>
+          <span class="eyebrow">5853 W Tropicana Ave · Las Vegas</span>
+          <h1 id="heroHeading">
+            <span class="line">Hand‑washed.</span>
+            <span class="line">Hand‑dried.</span>
+            <span class="line">Done <span class="amp">right.</span></span>
+          </h1>
+          <p class="hero-tag">
+            Every inch of your vehicle touched by hand — never a brush. Full hand car wash
+            and detail in Las Vegas, from a quick exterior refresh to a VIP interior &amp; out.
+          </p>
+          <div class="hero-cta-row">
+            <a href="tel:+17252650291" class="btn btn-primary">
+              Call to Book
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn-ghost">
+              See Pricing
+            </a>
+          </div>
+        </div>
+        <aside class="hero-meta" aria-label="At-a-glance facts">
+          <div class="stat">
+            <span class="k">Starts at</span>
+            <span class="v">$10 <span style="font-family:var(--narrow); font-size:13px; letter-spacing:0.18em; color:rgba(255,255,255,0.55); text-transform:uppercase;">/ Hand Wash</span></span>
+          </div>
+          <div class="stat">
+            <span class="k">Open Daily</span>
+            <span class="v" style="font-size: clamp(20px, 2vw, 26px);">8:00 AM – 6:30 PM</span>
+          </div>
+          <div class="stat">
+            <span class="k">Find Us</span>
+            <span class="v" style="font-size: clamp(18px, 1.8vw, 22px);">5853 W Tropicana Ave<br><span style="font-family:var(--narrow); font-size:13px; letter-spacing:0.18em; color:rgba(255,255,255,0.6); text-transform:uppercase; font-weight:600;">Las Vegas, NV</span></span>
+          </div>
+        </aside>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        Scroll
+        <span class="line"></span>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" aria-labelledby="servicesHeading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Services &amp; Pricing</span>
+            <h2 id="servicesHeading" style="margin-top:18px;">Five ways to leave <em>spotless.</em></h2>
+          </div>
+          <p class="desc">
+            Choose the level of care you want today. Every package is performed by hand —
+            no automated brushes, no shortcuts. Large &amp; extra‑large vehicles priced as marked.
+          </p>
+        </div>
+
+        <div class="pricing">
+          <!-- Hand Wash -->
+          <article class="plan reveal" aria-labelledby="plan-1">
+            <span class="plan-name" id="plan-1">Hand Wash</span>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">10</span>
+            </div>
+            <p class="plan-sub">The quick, careful basics.</p>
+            <ul>
+              <li>Hand wash</li>
+              <li>Towel dry</li>
+            </ul>
+            <div class="plan-foot">
+              <span>Large Vehicle <b>$15</b></span>
+              <span>Extra Large <b>$20</b></span>
+            </div>
+          </article>
+
+          <!-- Exterior Only -->
+          <article class="plan reveal" aria-labelledby="plan-2">
+            <span class="plan-name" id="plan-2">Exterior Only</span>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">20</span>
+            </div>
+            <p class="plan-sub">A complete outside refresh.</p>
+            <ul>
+              <li>Hand wash</li>
+              <li>Exterior windows</li>
+              <li>Sealer wax</li>
+              <li>Towel dry</li>
+              <li>Tire shine</li>
+            </ul>
+            <div class="plan-foot">
+              <span>Large Vehicle <b>$25</b></span>
+              <span>Extra Large <b>$30</b></span>
+            </div>
+          </article>
+
+          <!-- Regular -->
+          <article class="plan featured reveal" aria-labelledby="plan-3">
+            <span class="plan-name" id="plan-3">Regular</span>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">35</span>
+            </div>
+            <p class="plan-sub">Inside and out, the everyday clean.</p>
+            <ul>
+              <li>Clean windows</li>
+              <li>Vacuum</li>
+              <li>Air freshener</li>
+              <li>Hand wash</li>
+              <li>Tire cleaner</li>
+              <li>Sealer wax</li>
+              <li>Towel dry</li>
+              <li>Tire shine</li>
+            </ul>
+            <div class="plan-foot">
+              <span>Large Vehicle <b>$40</b></span>
+              <span>Extra Large <b>$45</b></span>
+            </div>
+          </article>
+
+          <!-- VIP -->
+          <article class="plan reveal" aria-labelledby="plan-4">
+            <span class="plan-name" id="plan-4">VIP Wash</span>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">40</span>
+            </div>
+            <p class="plan-sub">The full treatment — top to tire.</p>
+            <ul>
+              <li>Clean windows</li>
+              <li>Vacuum</li>
+              <li>Air freshener</li>
+              <li>Hand wash</li>
+              <li>Tire cleaner</li>
+              <li>Wheel cleaner</li>
+              <li>Sealer wax</li>
+              <li>Towel dry</li>
+              <li>Center console</li>
+              <li>Tire shine</li>
+            </ul>
+            <div class="plan-foot">
+              <span>Large Vehicle <b>$45</b></span>
+              <span>Extra Large <b>$50</b></span>
+            </div>
+          </article>
+
+          <!-- Ultimate VIP -->
+          <article class="plan reveal" aria-labelledby="plan-5">
+            <span class="plan-name" id="plan-5">Ultimate VIP</span>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">50</span>
+            </div>
+            <p class="plan-sub">Everything we do — the works.</p>
+            <ul>
+              <li>Clean windows</li>
+              <li>Vacuum</li>
+              <li>Air freshener</li>
+              <li>Hand wash</li>
+              <li>Tire cleaner</li>
+              <li>Wheel cleaner</li>
+              <li>Dash protectant</li>
+              <li>Spray wax</li>
+              <li>Sealer wax</li>
+              <li>Towel dry</li>
+              <li>Center console</li>
+              <li>Door panels</li>
+              <li>Tire shine</li>
+              <li>Mat cleaning</li>
+            </ul>
+            <div class="plan-foot">
+              <span>Large Vehicle <b>$55</b></span>
+              <span>Extra Large <b>$60</b></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="addons-head reveal">
+          <h3>Add‑On Services</h3>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="addons reveal">
+          <div class="addon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><path d="M3 18h18v2H3z"/></svg>
+            Fabric Seats &amp; Shampoo
+          </div>
+          <div class="addon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+            Headlight Lens Cleaning
+          </div>
+          <div class="addon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V8a3 3 0 0 1 3-3h7l6 6v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 5v6h8"/></svg>
+            Leather Shine
+          </div>
+          <div class="addon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M3 9h4M3 14h4"/></svg>
+            Mat Cleaning
+          </div>
+        </div>
+
+        <div class="perks reveal">
+          <div class="pills">
+            <span class="perk">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+              Cheap Memberships Available
+            </span>
+            <span class="perk">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/></svg>
+              Discounts for Veterans, Seniors &amp; Students
+            </span>
+          </div>
+          <p class="price-note">Credit / debit card fee +3% · Cash welcome</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" aria-labelledby="galleryHeading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">The Work</span>
+            <h2 id="galleryHeading" style="margin-top:18px;">Real cars. <em>Real results.</em></h2>
+          </div>
+          <p class="desc">
+            Daily drivers, sprinter vans, family SUVs — every vehicle gets the same hand‑finished
+            treatment from our Tropicana Ave bay.
+          </p>
+        </div>
+
+        <div class="gallery-grid reveal" role="list">
+          <figure class="g-1" role="listitem">
+            <img src="images/vidacarwash/1.png" alt="Two Vida Detail technicians in yellow shirts hand‑washing a black Mercedes Sprinter van in the wash bay." loading="lazy" />
+            <figcaption>Sprinter van — exterior</figcaption>
+          </figure>
+          <figure class="g-2" role="listitem">
+            <img src="images/vidacarwash/2.png" alt="A silver Acura sedan, freshly washed and gleaming under the bay canopy." loading="lazy" />
+            <figcaption>Acura sedan — VIP wash</figcaption>
+          </figure>
+          <figure class="g-3" role="listitem">
+            <img src="images/vidacarwash/4.png" alt="A Vida Detail technician hand‑cleaning the leather door panel and wood trim of a vehicle interior." loading="lazy" />
+            <figcaption>Interior detail — by hand</figcaption>
+          </figure>
+          <figure class="g-4" role="listitem">
+            <img src="images/vidacarwash/3.png" alt="The Vida Detail Car Wash bay at 5853 W Tropicana Ave with bright yellow banners and pennants." loading="lazy" />
+            <figcaption>The Vida bay — Tropicana Ave</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section id="reviews" aria-labelledby="reviewsHeading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Recent Reviews</span>
+            <h2 id="reviewsHeading" style="margin-top:18px;">In our customers' <em>own words.</em></h2>
+          </div>
+          <p class="desc">
+            A few recent notes from drivers who left a vehicle here and came back happier than they arrived.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review reveal">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div class="review-meta">
+                <div class="name">Aaron Joseph</div>
+                <div class="sub">A month ago · Google</div>
+              </div>
+              <div class="stars" style="margin-left:auto;" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p>I stopped by Vida full hand car wash today and I'm really impressed. The team did an excellent job — my car looks spotless inside and out. They paid attention to the small details and took their time to make sure everything was done right. On top of that, the price is very reasonable for the quality of service you get. Friendly staff, great results, and great value. I'll definitely be coming back and highly recommend this place!</p>
+            <span class="tag">Auto detailing · Great price</span>
+          </article>
+
+          <article class="review reveal">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">M</div>
+              <div class="review-meta">
+                <div class="name">Maralyn Coscia</div>
+                <div class="sub">A month ago · Local Guide</div>
+              </div>
+              <div class="stars" style="margin-left:auto;" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p>Brian and Rami were fantastic at Vida's Car Wash. If you're local or visiting, highly recommend using them for a car detail!! Super friendly, super fair pricing and the truck came out SO clean for a full exterior detail. Thank you thank you</p>
+            <span class="tag">Polishing · Detailing · Waxing</span>
+          </article>
+
+          <article class="review reveal">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">K</div>
+              <div class="review-meta">
+                <div class="name">Kiwi Meba</div>
+                <div class="sub">2 months ago · Google</div>
+              </div>
+              <div class="stars" style="margin-left:auto;" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p>I had my car washed here today and they did an amazing job. The team was very detailed — they cleaned everything thoroughly and didn't miss a spot. My car looks spotless inside and out. What really impressed me was how fast they worked without sacrificing quality. Great service, professional staff, and excellent results. I will definitely be coming back.</p>
+            <span class="tag">Fast · Thorough · Professional</span>
+          </article>
+
+          <article class="review reveal">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">B</div>
+              <div class="review-meta">
+                <div class="name">Babi Tessema</div>
+                <div class="sub">2 months ago · Google</div>
+              </div>
+              <div class="stars" style="margin-left:auto;" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p>I had a great experience at this car wash. The team did an amazing job cleaning my car inside and out. Very professional, fast service, and attention to detail. My car looks like new! I highly recommend this place and will definitely come back again.</p>
+            <span class="tag">Inside &amp; out · Like new</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" aria-labelledby="contactHeading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Visit</span>
+            <h2 id="contactHeading" style="margin-top:18px;">Pull in. <em>Drive out clean.</em></h2>
+          </div>
+          <p class="desc">
+            No appointment needed for a wash. For a full detail, call ahead so we can have a bay ready for you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-row">
+              <span class="k">Call</span>
+              <span class="v"><a href="tel:+17252650291">(725) 265‑0291</a></span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Email</span>
+              <span class="v"><a href="/cdn-cgi/l/email-protection#1b72757d745b6d727f7a787a696c7a687335787476"><span class="__cf_email__" data-cfemail="b8d1d6ded7f8ced1dcd9dbd9cacfd9cbd096dbd7d5">[email&#160;protected]</span></a></span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Address</span>
+              <span class="v">
+                <a href="https://www.google.com/maps/place/Vida+Full+Hand+Car+Wash+%26+Detail/@36.0997205,-115.2213919,17z/data=!4m6!3m5!1s0x80c8c7eebaf5739f:0xfb8c3dcbfb4170d3!8m2!3d36.0995579!4d-115.2214982!16s%2Fg%2F11z1k_206w!5m1!1e3?entry=tts&amp;g_ep=EgoyMDI2MDUyMC4wIPu8ASoASAFQAw%3D%3D&amp;skid=e355a05f-4f65-434c-a007-a430b592be9c" target="_blank" rel="noopener noreferrer">5853 W Tropicana Ave</a>
+                <small>Las Vegas, NV 89103</small>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Hours</span>
+              <span class="v">Open Daily · 8:00 AM – 6:30 PM
+              </span>
+            </div>
+          </div>
+
+          <aside class="contact-card reveal">
+            <span class="label">Find Us</span>
+            <h3>Right off Tropicana &amp; Jones — easy in, easy out.</h3>
+            <p style="color:var(--muted); font-size:15px; margin-top:-6px;">5853 W Tropicana Ave, Las Vegas, NV 89103</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="https://www.google.com/maps/place/Vida+Full+Hand+Car+Wash+%26+Detail/@36.0997205,-115.2213919,17z/data=!4m6!3m5!1s0x80c8c7eebaf5739f:0xfb8c3dcbfb4170d3!8m2!3d36.0995579!4d-115.2214982!16s%2Fg%2F11z1k_206w!5m1!1e3?entry=tts&amp;g_ep=EgoyMDI2MDUyMC4wIPu8ASoASAFQAw%3D%3D&amp;skid=e355a05f-4f65-434c-a007-a430b592be9c" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Get Directions
+              </a>
+              <a class="btn btn-ghost" href="tel:+17252650291">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="row">
+        <div class="col" style="max-width: 340px;">
+          <div class="brand" style="margin-bottom: 4px;">
+            <img class="brand-mark" src="images/vidacarwash/logo.png" alt="Vida Full Hand Car Wash &amp; Detail logo" />
+            <span class="brand-text">
+              Vida Detail
+              <small>Full Hand Car Wash</small>
+            </span>
+          </div>
+          <p style="color: var(--muted); font-size: 14px;">Every wash and detail performed by hand at our Tropicana Ave bay in Las Vegas.</p>
+        </div>
+        <div class="col">
+          <h4>Site</h4>
+          <a href="#services">Services</a>
+          <a href="#gallery">Work</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Visit</a>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <a href="tel:+17252650291">(725) 265‑0291</a>
+          <a href="/cdn-cgi/l/email-protection#345d5a525b74425d50555755464355475c1a575b59"><span class="__cf_email__" data-cfemail="caa3a4aca58abca3aeaba9abb8bdabb9a2e4a9a5a7">[email&#160;protected]</span></a>
+          <a href="https://www.google.com/maps/place/Vida+Full+Hand+Car+Wash+%26+Detail/@36.0997205,-115.2213919,17z/data=!4m6!3m5!1s0x80c8c7eebaf5739f:0xfb8c3dcbfb4170d3!8m2!3d36.0995579!4d-115.2214982!16s%2Fg%2F11z1k_206w!5m1!1e3?entry=tts&amp;g_ep=EgoyMDI2MDUyMC4wIPu8ASoASAFQAw%3D%3D&amp;skid=e355a05f-4f65-434c-a007-a430b592be9c" target="_blank" rel="noopener noreferrer">5853 W Tropicana Ave</a>
+        </div>
+        <div class="col">
+          <h4>Hours</h4>
+          <span style="color:var(--muted); font-size:14px;">Open Daily</span>
+          <span style="color:var(--muted); font-size:14px;">8:00 AM – 6:30 PM</span>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© <span id="yr">2026</span> Vida Full Hand Car Wash &amp; Detail</span>
+        <span>Las Vegas, Nevada</span>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Header background on scroll
+    const header = document.getElementById('siteHeader');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Reveal-on-scroll
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      }
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
